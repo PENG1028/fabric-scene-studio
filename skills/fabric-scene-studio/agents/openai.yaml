@@ -1,0 +1,7 @@
+interface:
+
+  display_name: "面料场景工作室"
+
+  short_description: "用真实面料照片复用服装与家居生图流程，调试风格并记录费用"
+
+  default_prompt: "使用 $fabric-scene-studio 读取这组面料的完整平面图和补充照片，复用已有流程并准备一张可穿着、有设计感的模特图。"

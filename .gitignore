@@ -1,0 +1,17 @@
+**/__pycache__/
+*.pyc
+**/api_key.txt
+.env
+.env.*
+!*.example
+**/auth.json
+local/
+**/results/
+**/*.lock
+
+portable/references/
+portable/cache/
+**/fabric_usage_log.jsonl
+**/fabric_cost_log.csv
+**/fabric_cache/
+**/requests/

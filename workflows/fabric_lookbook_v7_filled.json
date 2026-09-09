@@ -1,0 +1,3259 @@
+{
+  "id": "6680211b-00d2-463d-9a26-38fd8160b0e0",
+  "revision": 0,
+  "last_node_id": 28,
+  "last_link_id": 157,
+  "nodes": [
+    {
+      "id": 3,
+      "type": "FabricMaterialFolder",
+      "pos": [
+        -580,
+        -350
+      ],
+      "size": [
+        440,
+        340
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "caption_1",
+          "name": "caption_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": 153
+        },
+        {
+          "localized_name": "caption_2",
+          "name": "caption_2",
+          "shape": 7,
+          "type": "STRING",
+          "link": 154
+        },
+        {
+          "localized_name": "caption_3",
+          "name": "caption_3",
+          "shape": 7,
+          "type": "STRING",
+          "link": 155
+        },
+        {
+          "localized_name": "caption_4",
+          "name": "caption_4",
+          "shape": 7,
+          "type": "STRING",
+          "link": 156
+        },
+        {
+          "localized_name": "folder_path",
+          "name": "folder_path",
+          "type": "STRING",
+          "widget": {
+            "name": "folder_path"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "flat_filename",
+          "name": "flat_filename",
+          "type": "STRING",
+          "widget": {
+            "name": "flat_filename"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_filenames",
+          "name": "extra_filenames",
+          "type": "STRING",
+          "widget": {
+            "name": "extra_filenames"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "reference_prompt",
+          "name": "reference_prompt",
+          "type": "STRING",
+          "links": [
+            132
+          ]
+        },
+        {
+          "localized_name": "preview_images",
+          "name": "preview_images",
+          "type": "IMAGE",
+          "links": [
+            157
+          ]
+        },
+        {
+          "localized_name": "original_refs",
+          "name": "original_refs",
+          "type": "FABRIC_REFS",
+          "links": [
+            135,
+            139,
+            143,
+            147,
+            151
+          ]
+        }
+      ],
+      "title": "① 整组实拍 · 改主图编号即可换组",
+      "properties": {
+        "Node name for S&R": "FabricMaterialFolder"
+      },
+      "widgets_values": [
+        "",
+        "1.JPG",
+        "{stem}-3.JPG\n{stem}-2.JPG",
+        null
+      ],
+      "widgets_values_named": {
+        "folder_path": "",
+        "flat_filename": "1.JPG",
+        "extra_filenames": "{stem}-3.JPG\n{stem}-2.JPG"
+      }
+    },
+    {
+      "id": 7,
+      "type": "FabricScenePreset",
+      "pos": [
+        620,
+        -350
+      ],
+      "size": [
+        640,
+        750
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "faithfulness_prompt",
+          "name": "faithfulness_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "link": 133
+        },
+        {
+          "localized_name": "scene_preset",
+          "name": "scene_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "scene_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "joiner",
+          "name": "joiner",
+          "type": "STRING",
+          "widget": {
+            "name": "joiner"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subject",
+          "name": "subject",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subject"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "scene",
+          "name": "scene",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scene"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "photography",
+          "name": "photography",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "photography"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size_hint",
+          "name": "size_hint",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "size_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "include_size_hint",
+          "name": "include_size_hint",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "include_size_hint"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            134
+          ]
+        },
+        {
+          "localized_name": "chars",
+          "name": "chars",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "对照1 · 长马甲（面料还原待改）",
+      "properties": {
+        "Node name for S&R": "FabricScenePreset"
+      },
+      "widgets_values": [
+        "Custom",
+        "\n\n",
+        "为设计师提供可实际穿着的现代品牌成衣灵感。26–32岁亚洲成年女性，自然齐肩黑发、淡妆，沉静自信。设计一件及小腿的轻透无袖交叠长马甲，搭配独立不透的炭灰色简洁背心与高腰九分直筒长裤。主面料使用参考实拍布，覆盖长马甲的大幅前后身与裙式下摆，约占整套可见服装面积的六成；最前方留一幅宽而平顺的主面料，能看清本色和细织物的规律。配料限定为纯炭灰哑光密织布：形成有支撑的小翻领、窄前襟、窄腰带和很细的袖窿包边；这些位置清楚是另一种布。设计焦点是左侧腰部：一条短腰袢和一枚小型暗银搭扣只在左腰固定斜向交叠前片，不是居中系满一圈的普通腰带。左右两片前身长度有明确差别，较长一片呈柔和弧形斜落至小腿，另一片高出一掌左右，迈步时两片自然分开露出内搭裤装。裁片简洁但比例新颖，不堆碎褶、不加绣花。肩线、袖窿、腰带连接和包边合理，内搭完整遮蔽胸腹与臀胯；外层轻透处透出内搭轮廓，侧边少量悬空处能看见背景。双脚穿黑色抛光皮革系带德比鞋，封闭皮革鞋后帮完整包住脚跟，脚背系带、鞋底低平；两只鞋完整可见，禁止露跟绑带鞋。",
+        "安静的浅暖灰现代建筑廊道，细腻石材墙和地面，一道竖向墙角形成空间纵深，无家具遮挡。人物从容迈出半步，身体相对镜头转约20度，头自然回向镜头；一只手轻放腰侧，另一只手自然下垂并离开外层裁片。服装是照片主角。",
+        "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        true
+      ],
+      "widgets_values_named": {
+        "scene_preset": "Custom",
+        "joiner": "\n\n",
+        "subject": "为设计师提供可实际穿着的现代品牌成衣灵感。26–32岁亚洲成年女性，自然齐肩黑发、淡妆，沉静自信。设计一件及小腿的轻透无袖交叠长马甲，搭配独立不透的炭灰色简洁背心与高腰九分直筒长裤。主面料使用参考实拍布，覆盖长马甲的大幅前后身与裙式下摆，约占整套可见服装面积的六成；最前方留一幅宽而平顺的主面料，能看清本色和细织物的规律。配料限定为纯炭灰哑光密织布：形成有支撑的小翻领、窄前襟、窄腰带和很细的袖窿包边；这些位置清楚是另一种布。设计焦点是左侧腰部：一条短腰袢和一枚小型暗银搭扣只在左腰固定斜向交叠前片，不是居中系满一圈的普通腰带。左右两片前身长度有明确差别，较长一片呈柔和弧形斜落至小腿，另一片高出一掌左右，迈步时两片自然分开露出内搭裤装。裁片简洁但比例新颖，不堆碎褶、不加绣花。肩线、袖窿、腰带连接和包边合理，内搭完整遮蔽胸腹与臀胯；外层轻透处透出内搭轮廓，侧边少量悬空处能看见背景。双脚穿黑色抛光皮革系带德比鞋，封闭皮革鞋后帮完整包住脚跟，脚背系带、鞋底低平；两只鞋完整可见，禁止露跟绑带鞋。",
+        "scene": "安静的浅暖灰现代建筑廊道，细腻石材墙和地面，一道竖向墙角形成空间纵深，无家具遮挡。人物从容迈出半步，身体相对镜头转约20度，头自然回向镜头；一只手轻放腰侧，另一只手自然下垂并离开外层裁片。服装是照片主角。",
+        "photography": "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "size_hint": "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        "include_size_hint": true
+      }
+    },
+    {
+      "id": 11,
+      "type": "FabricGPTImage2",
+      "pos": [
+        1340,
+        500
+      ],
+      "size": [
+        470,
+        830
+      ],
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "ref_images",
+          "name": "ref_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "original_refs",
+          "name": "original_refs",
+          "shape": 7,
+          "type": "FABRIC_REFS",
+          "link": 139
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 138
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cost_preview",
+          "name": "cost_preview",
+          "type": "STRING",
+          "widget": {
+            "name": "cost_preview"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "token_estimate",
+          "name": "token_estimate",
+          "type": "STRING",
+          "widget": {
+            "name": "token_estimate"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_tokens",
+          "name": "last_tokens",
+          "type": "STRING",
+          "widget": {
+            "name": "last_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_cost",
+          "name": "last_cost",
+          "type": "STRING",
+          "widget": {
+            "name": "last_cost"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "openai_api_key",
+          "name": "openai_api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "openai_api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cache_mode",
+          "name": "cache_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "cache_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "variation",
+          "name": "variation",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "variation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "reference_max_pixels",
+          "name": "reference_max_pixels",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "reference_max_pixels"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_base_url",
+          "name": "api_base_url",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_base_url"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key_file",
+          "name": "api_key_file",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_key_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            140
+          ]
+        },
+        {
+          "localized_name": "cost_report",
+          "name": "cost_report",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "debug_json",
+          "name": "debug_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "面料生图 · API Key / 自定义接口",
+      "properties": {
+        "Node name for S&R": "FabricGPTImage2"
+      },
+      "widgets_values": [
+        "",
+        "gpt-image-2",
+        "low",
+        "1024x1536",
+        1024,
+        1024,
+        "auto",
+        1,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "reuse",
+        0,
+        4194304,
+        "https://api.openai.com/v1",
+        "",
+        "",
+        null
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "gpt-image-2",
+        "quality": "low",
+        "size": "1024x1536",
+        "custom_width": 1024,
+        "custom_height": 1024,
+        "background": "auto",
+        "n": 1,
+        "cost_preview": "",
+        "token_estimate": "",
+        "last_tokens": "",
+        "last_cost": "",
+        "openai_api_key": "",
+        "cache_mode": "reuse",
+        "variation": 0,
+        "reference_max_pixels": 4194304,
+        "api_base_url": "https://api.openai.com/v1",
+        "custom_model": "",
+        "api_key_file": ""
+      }
+    },
+    {
+      "id": 12,
+      "type": "SaveImage",
+      "pos": [
+        1870,
+        500
+      ],
+      "size": [
+        420,
+        570
+      ],
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 140
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存 · 立体短罩衫＋中长裙（草图）",
+      "properties": {},
+      "widgets_values": [
+        "fabric_inspiration_sculpted_top"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "fabric_inspiration_sculpted_top"
+      }
+    },
+    {
+      "id": 14,
+      "type": "FabricGPTImage2",
+      "pos": [
+        1340,
+        1350
+      ],
+      "size": [
+        470,
+        830
+      ],
+      "flags": {},
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "ref_images",
+          "name": "ref_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "original_refs",
+          "name": "original_refs",
+          "shape": 7,
+          "type": "FABRIC_REFS",
+          "link": 143
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 142
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cost_preview",
+          "name": "cost_preview",
+          "type": "STRING",
+          "widget": {
+            "name": "cost_preview"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "token_estimate",
+          "name": "token_estimate",
+          "type": "STRING",
+          "widget": {
+            "name": "token_estimate"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_tokens",
+          "name": "last_tokens",
+          "type": "STRING",
+          "widget": {
+            "name": "last_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_cost",
+          "name": "last_cost",
+          "type": "STRING",
+          "widget": {
+            "name": "last_cost"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "openai_api_key",
+          "name": "openai_api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "openai_api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cache_mode",
+          "name": "cache_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "cache_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "variation",
+          "name": "variation",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "variation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "reference_max_pixels",
+          "name": "reference_max_pixels",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "reference_max_pixels"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_base_url",
+          "name": "api_base_url",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_base_url"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key_file",
+          "name": "api_key_file",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_key_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            144
+          ]
+        },
+        {
+          "localized_name": "cost_report",
+          "name": "cost_report",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "debug_json",
+          "name": "debug_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "面料生图 · API Key / 自定义接口",
+      "properties": {
+        "Node name for S&R": "FabricGPTImage2"
+      },
+      "widgets_values": [
+        "",
+        "gpt-image-2",
+        "low",
+        "1024x1536",
+        1024,
+        1024,
+        "auto",
+        1,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "reuse",
+        0,
+        4194304,
+        "https://api.openai.com/v1",
+        "",
+        "",
+        null
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "gpt-image-2",
+        "quality": "low",
+        "size": "1024x1536",
+        "custom_width": 1024,
+        "custom_height": 1024,
+        "background": "auto",
+        "n": 1,
+        "cost_preview": "",
+        "token_estimate": "",
+        "last_tokens": "",
+        "last_cost": "",
+        "openai_api_key": "",
+        "cache_mode": "reuse",
+        "variation": 0,
+        "reference_max_pixels": 4194304,
+        "api_base_url": "https://api.openai.com/v1",
+        "custom_model": "",
+        "api_key_file": ""
+      }
+    },
+    {
+      "id": 15,
+      "type": "SaveImage",
+      "pos": [
+        1870,
+        1350
+      ],
+      "size": [
+        420,
+        570
+      ],
+      "flags": {},
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 144
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存 · 披肩片连衣裙（草图）",
+      "properties": {},
+      "widgets_values": [
+        "fabric_inspiration_cape_dress"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "fabric_inspiration_cape_dress"
+      }
+    },
+    {
+      "id": 16,
+      "type": "FabricScenePreset",
+      "pos": [
+        620,
+        2200
+      ],
+      "size": [
+        640,
+        750
+      ],
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "faithfulness_prompt",
+          "name": "faithfulness_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "link": 145
+        },
+        {
+          "localized_name": "scene_preset",
+          "name": "scene_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "scene_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "joiner",
+          "name": "joiner",
+          "type": "STRING",
+          "widget": {
+            "name": "joiner"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subject",
+          "name": "subject",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subject"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "scene",
+          "name": "scene",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scene"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "photography",
+          "name": "photography",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "photography"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size_hint",
+          "name": "size_hint",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "size_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "include_size_hint",
+          "name": "include_size_hint",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "include_size_hint"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            146
+          ]
+        },
+        {
+          "localized_name": "chars",
+          "name": "chars",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "灵感4 · 轻运动外套＋百慕大短裤（草图·面料待验收）",
+      "properties": {
+        "Node name for S&R": "FabricScenePreset"
+      },
+      "widgets_values": [
+        "Custom",
+        "\n\n",
+        "为设计师提供一套轻运动与城市剪裁结合的可穿着品牌造型。26–32岁亚洲成年女性，自然齐肩黑发、淡妆。方向：及髋微廓形轻透外套配高腰及膝百慕大短裤，上下都保持清楚的宽松直线比例。参考布做外套的大幅前后身和插肩长袖，前胸有宽平顺展示区域；斜向肩线、略弧形下摆与一条简洁前拉链构成设计细节。配料由模型另设计成素石墨灰哑光密织布，仅做窄立领、拉链挡片、肩缝加固带和袖口，避免把主面料画成防水亮膜或厚帆布。独立不透的素色内搭与石灰白密织百慕大短裤完整遮蔽身体；参考布本身仍轻透，袖子与下摆悬空部分可展示真实透光。肩线、袖窿、拉链和口袋位置符合实际穿着活动，不加不合理绳带和盔甲结构。外套不收成侧腰搭扣长马甲，也不用窄黑色九分裤。双脚穿黑色皮革系带短靴，封闭鞋头和完整后跟；两只靴子完整入画。",
+        "浅灰现代建筑入口，背景有一段简洁水平墙线。模特自然迈出小步，一只手轻扶外套下摆边缘而不攥住大面积面料，另一只手自然摆动；肩部放松，动作利落而非夸张摆拍。",
+        "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        true
+      ],
+      "widgets_values_named": {
+        "scene_preset": "Custom",
+        "joiner": "\n\n",
+        "subject": "为设计师提供一套轻运动与城市剪裁结合的可穿着品牌造型。26–32岁亚洲成年女性，自然齐肩黑发、淡妆。方向：及髋微廓形轻透外套配高腰及膝百慕大短裤，上下都保持清楚的宽松直线比例。参考布做外套的大幅前后身和插肩长袖，前胸有宽平顺展示区域；斜向肩线、略弧形下摆与一条简洁前拉链构成设计细节。配料由模型另设计成素石墨灰哑光密织布，仅做窄立领、拉链挡片、肩缝加固带和袖口，避免把主面料画成防水亮膜或厚帆布。独立不透的素色内搭与石灰白密织百慕大短裤完整遮蔽身体；参考布本身仍轻透，袖子与下摆悬空部分可展示真实透光。肩线、袖窿、拉链和口袋位置符合实际穿着活动，不加不合理绳带和盔甲结构。外套不收成侧腰搭扣长马甲，也不用窄黑色九分裤。双脚穿黑色皮革系带短靴，封闭鞋头和完整后跟；两只靴子完整入画。",
+        "scene": "浅灰现代建筑入口，背景有一段简洁水平墙线。模特自然迈出小步，一只手轻扶外套下摆边缘而不攥住大面积面料，另一只手自然摆动；肩部放松，动作利落而非夸张摆拍。",
+        "photography": "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "size_hint": "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        "include_size_hint": true
+      }
+    },
+    {
+      "id": 17,
+      "type": "FabricGPTImage2",
+      "pos": [
+        1340,
+        2200
+      ],
+      "size": [
+        470,
+        830
+      ],
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "ref_images",
+          "name": "ref_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "original_refs",
+          "name": "original_refs",
+          "shape": 7,
+          "type": "FABRIC_REFS",
+          "link": 147
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 146
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cost_preview",
+          "name": "cost_preview",
+          "type": "STRING",
+          "widget": {
+            "name": "cost_preview"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "token_estimate",
+          "name": "token_estimate",
+          "type": "STRING",
+          "widget": {
+            "name": "token_estimate"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_tokens",
+          "name": "last_tokens",
+          "type": "STRING",
+          "widget": {
+            "name": "last_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_cost",
+          "name": "last_cost",
+          "type": "STRING",
+          "widget": {
+            "name": "last_cost"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "openai_api_key",
+          "name": "openai_api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "openai_api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cache_mode",
+          "name": "cache_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "cache_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "variation",
+          "name": "variation",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "variation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "reference_max_pixels",
+          "name": "reference_max_pixels",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "reference_max_pixels"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_base_url",
+          "name": "api_base_url",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_base_url"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key_file",
+          "name": "api_key_file",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_key_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            148
+          ]
+        },
+        {
+          "localized_name": "cost_report",
+          "name": "cost_report",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "debug_json",
+          "name": "debug_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "面料生图 · API Key / 自定义接口",
+      "properties": {
+        "Node name for S&R": "FabricGPTImage2"
+      },
+      "widgets_values": [
+        "",
+        "gpt-image-2",
+        "low",
+        "1024x1536",
+        1024,
+        1024,
+        "auto",
+        1,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "reuse",
+        0,
+        4194304,
+        "https://api.openai.com/v1",
+        "",
+        "",
+        null
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "gpt-image-2",
+        "quality": "low",
+        "size": "1024x1536",
+        "custom_width": 1024,
+        "custom_height": 1024,
+        "background": "auto",
+        "n": 1,
+        "cost_preview": "",
+        "token_estimate": "",
+        "last_tokens": "",
+        "last_cost": "",
+        "openai_api_key": "",
+        "cache_mode": "reuse",
+        "variation": 0,
+        "reference_max_pixels": 4194304,
+        "api_base_url": "https://api.openai.com/v1",
+        "custom_model": "",
+        "api_key_file": ""
+      }
+    },
+    {
+      "id": 18,
+      "type": "SaveImage",
+      "pos": [
+        1870,
+        2200
+      ],
+      "size": [
+        420,
+        570
+      ],
+      "flags": {},
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 148
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存 · 轻运动外套＋百慕大短裤（草图）",
+      "properties": {},
+      "widgets_values": [
+        "fabric_inspiration_sport_shell"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "fabric_inspiration_sport_shell"
+      }
+    },
+    {
+      "id": 19,
+      "type": "FabricScenePreset",
+      "pos": [
+        620,
+        3050
+      ],
+      "size": [
+        640,
+        750
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "faithfulness_prompt",
+          "name": "faithfulness_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "link": 149
+        },
+        {
+          "localized_name": "scene_preset",
+          "name": "scene_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "scene_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "joiner",
+          "name": "joiner",
+          "type": "STRING",
+          "widget": {
+            "name": "joiner"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subject",
+          "name": "subject",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subject"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "scene",
+          "name": "scene",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scene"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "photography",
+          "name": "photography",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "photography"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size_hint",
+          "name": "size_hint",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "size_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "include_size_hint",
+          "name": "include_size_hint",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "include_size_hint"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            150
+          ]
+        },
+        {
+          "localized_name": "chars",
+          "name": "chars",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "场景5 · 轻透窗纱＋独立遮光帘",
+      "properties": {
+        "Node name for S&R": "FabricScenePreset"
+      },
+      "widgets_values": [
+        "Custom",
+        "\n\n",
+        "真实住宅的轻透窗纱应用设计。用全部参考照片中的同一块布制作一幅落地窗纱，作为靠窗的内层；保留主面料本色、细纱束规律与开放孔隙。窗纱占画面约三分之二，中央有一幅较宽平顺部分，旁边只有几道宽松自然竖褶，底边整齐离地少许，有合理顶部挂接与细窄侧缝。另配一幅素炭灰哑光遮光帘收拢在画面右侧，仅占约六分之一；它是另选的配料，不得把主面料变成遮光厚布。能透过主面料隐约看见窗框及室外柔和树影，透光强弱跟随单层与叠层变化，主面料仍清楚可见。",
+        "安静现代住宅一角，浅暖灰墙面、细腻浅色地面和高窗。没有人物、没有模特服装、没有沙发挡住窗纱。画面重点是这块真实布在大面积垂挂中的质感和光影，陈设克制。",
+        "真实室内产品摄影，机位约人眼高度，50mm视角，轻微斜侧拍能同时看清平顺帘面与褶皱，竖线笔直。明亮但不过曝的中性白天漫射光，室内柔和补光让浅色纱束有形，禁止用纯白过曝把组织抹去。细密织物按房间观看距离呈现，不把特写网格放大，不添加颗粒噪声。",
+        "单张竖幅室内照片，完整展示顶部挂接到下摆，主体清晰，无文字、无拼版、无细节小窗。",
+        true
+      ],
+      "widgets_values_named": {
+        "scene_preset": "Custom",
+        "joiner": "\n\n",
+        "subject": "真实住宅的轻透窗纱应用设计。用全部参考照片中的同一块布制作一幅落地窗纱，作为靠窗的内层；保留主面料本色、细纱束规律与开放孔隙。窗纱占画面约三分之二，中央有一幅较宽平顺部分，旁边只有几道宽松自然竖褶，底边整齐离地少许，有合理顶部挂接与细窄侧缝。另配一幅素炭灰哑光遮光帘收拢在画面右侧，仅占约六分之一；它是另选的配料，不得把主面料变成遮光厚布。能透过主面料隐约看见窗框及室外柔和树影，透光强弱跟随单层与叠层变化，主面料仍清楚可见。",
+        "scene": "安静现代住宅一角，浅暖灰墙面、细腻浅色地面和高窗。没有人物、没有模特服装、没有沙发挡住窗纱。画面重点是这块真实布在大面积垂挂中的质感和光影，陈设克制。",
+        "photography": "真实室内产品摄影，机位约人眼高度，50mm视角，轻微斜侧拍能同时看清平顺帘面与褶皱，竖线笔直。明亮但不过曝的中性白天漫射光，室内柔和补光让浅色纱束有形，禁止用纯白过曝把组织抹去。细密织物按房间观看距离呈现，不把特写网格放大，不添加颗粒噪声。",
+        "size_hint": "单张竖幅室内照片，完整展示顶部挂接到下摆，主体清晰，无文字、无拼版、无细节小窗。",
+        "include_size_hint": true
+      }
+    },
+    {
+      "id": 20,
+      "type": "FabricGPTImage2",
+      "pos": [
+        1340,
+        3050
+      ],
+      "size": [
+        470,
+        830
+      ],
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "ref_images",
+          "name": "ref_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "original_refs",
+          "name": "original_refs",
+          "shape": 7,
+          "type": "FABRIC_REFS",
+          "link": 151
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 150
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cost_preview",
+          "name": "cost_preview",
+          "type": "STRING",
+          "widget": {
+            "name": "cost_preview"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "token_estimate",
+          "name": "token_estimate",
+          "type": "STRING",
+          "widget": {
+            "name": "token_estimate"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_tokens",
+          "name": "last_tokens",
+          "type": "STRING",
+          "widget": {
+            "name": "last_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_cost",
+          "name": "last_cost",
+          "type": "STRING",
+          "widget": {
+            "name": "last_cost"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "openai_api_key",
+          "name": "openai_api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "openai_api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cache_mode",
+          "name": "cache_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "cache_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "variation",
+          "name": "variation",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "variation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "reference_max_pixels",
+          "name": "reference_max_pixels",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "reference_max_pixels"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_base_url",
+          "name": "api_base_url",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_base_url"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key_file",
+          "name": "api_key_file",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_key_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            152
+          ]
+        },
+        {
+          "localized_name": "cost_report",
+          "name": "cost_report",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "debug_json",
+          "name": "debug_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "面料生图 · API Key / 自定义接口",
+      "properties": {
+        "Node name for S&R": "FabricGPTImage2"
+      },
+      "widgets_values": [
+        "",
+        "gpt-image-2",
+        "medium",
+        "1024x1536",
+        1024,
+        1024,
+        "auto",
+        1,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "reuse",
+        0,
+        4194304,
+        "https://api.openai.com/v1",
+        "",
+        "",
+        null
+      ],
+      "widgets_values_named": {
+        "prompt": "",
+        "model": "gpt-image-2",
+        "quality": "medium",
+        "size": "1024x1536",
+        "custom_width": 1024,
+        "custom_height": 1024,
+        "background": "auto",
+        "n": 1,
+        "cost_preview": "",
+        "token_estimate": "",
+        "last_tokens": "",
+        "last_cost": "",
+        "openai_api_key": "",
+        "cache_mode": "reuse",
+        "variation": 0,
+        "reference_max_pixels": 4194304,
+        "api_base_url": "https://api.openai.com/v1",
+        "custom_model": "",
+        "api_key_file": ""
+      }
+    },
+    {
+      "id": 21,
+      "type": "SaveImage",
+      "pos": [
+        1870,
+        3050
+      ],
+      "size": [
+        420,
+        570
+      ],
+      "flags": {},
+      "order": 21,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 152
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存5 · 轻透窗纱",
+      "properties": {},
+      "widgets_values": [
+        "fabric_sheer_curtain"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "fabric_sheer_curtain",
+        "$$canvas-image-preview": ""
+      }
+    },
+    {
+      "id": 5,
+      "type": "FabricSceneCaption",
+      "pos": [
+        -1140,
+        150
+      ],
+      "size": [
+        470,
+        435
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "fabric",
+          "name": "fabric",
+          "type": "STRING",
+          "widget": {
+            "name": "fabric"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weave",
+          "name": "weave",
+          "type": "STRING",
+          "widget": {
+            "name": "weave"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "surface",
+          "name": "surface",
+          "type": "STRING",
+          "widget": {
+            "name": "surface"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weight",
+          "name": "weight",
+          "type": "STRING",
+          "widget": {
+            "name": "weight"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_notes",
+          "name": "extra_notes",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_notes"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "caption",
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            154
+          ]
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "参考2 · 大面积透光",
+      "properties": {
+        "Node name for S&R": "FabricSceneCaption"
+      },
+      "widgets_values": [
+        "同一面料的较大面积轻褶实拍",
+        "结合第一张判断；层叠处更浅或更深属于光线与叠层",
+        "疏密随透视与重叠变化，单层组织仍与平面图一致",
+        "观察大面积轻褶处的自然质感",
+        "单层透底，叠层稍遮光；自然形成轻柔而非液态的折线",
+        "用于判断大面积展示与透光。暗背景不转印为花纹，不额外增加条纹或沙状颗粒。"
+      ],
+      "widgets_values_named": {
+        "fabric": "同一面料的较大面积轻褶实拍",
+        "color": "结合第一张判断；层叠处更浅或更深属于光线与叠层",
+        "weave": "疏密随透视与重叠变化，单层组织仍与平面图一致",
+        "surface": "观察大面积轻褶处的自然质感",
+        "weight": "单层透底，叠层稍遮光；自然形成轻柔而非液态的折线",
+        "extra_notes": "用于判断大面积展示与透光。暗背景不转印为花纹，不额外增加条纹或沙状颗粒。"
+      }
+    },
+    {
+      "id": 13,
+      "type": "FabricScenePreset",
+      "pos": [
+        620,
+        1350
+      ],
+      "size": [
+        640,
+        750
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "faithfulness_prompt",
+          "name": "faithfulness_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "link": 141
+        },
+        {
+          "localized_name": "scene_preset",
+          "name": "scene_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "scene_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "joiner",
+          "name": "joiner",
+          "type": "STRING",
+          "widget": {
+            "name": "joiner"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subject",
+          "name": "subject",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subject"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "scene",
+          "name": "scene",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scene"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "photography",
+          "name": "photography",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "photography"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size_hint",
+          "name": "size_hint",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "size_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "include_size_hint",
+          "name": "include_size_hint",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "include_size_hint"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            142
+          ]
+        },
+        {
+          "localized_name": "chars",
+          "name": "chars",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "灵感3 · 披肩片连衣裙（草图·面料待验收）",
+      "properties": {
+        "Node name for S&R": "FabricScenePreset"
+      },
+      "widgets_values": [
+        "Custom",
+        "\n\n",
+        "为设计师提供一件优雅、有新意且能正常穿着的现代连衣裙。26–32岁亚洲成年女性，齐肩黑发、自然淡妆。方向：方领合体上身与轻透A字长裙，通过一片从右肩连接并自然斜落到左侧腰后的宽披肩片形成动势。模型另设计素深咖哑光密织布，做有真实支撑的方领上身、足够宽的肩带和隐藏式独立内裙；胸腹臀胯完整遮蔽。用户参考布用于腰下的大幅A字外裙和肩部披片，外裙长至小腿、内裙到膝附近，主面料占整套主要可见面积，正面留连续宽平顺裙片展示本色与组织。肩片轻轻离开手臂的位置呈现单层透光，裙片随重力弯折，保持实拍中的轻薄和身骨。裁片连接、腰缝与细包边可实际缝制；腰线清楚但没有外露腰带，没有衬衫翻领和长马甲门襟，不堆花边、珠片或装饰网眼。自然转身让肩片和裙摆各形成一条不同方向的柔和弧线。双脚穿深咖色包头包跟低跟皮鞋，封闭鞋后帮完整包住脚跟，不用露跟绑带；两只鞋完整可见。",
+        "安静的浅灰石材廊道，一段宽墙面提供干净背景。模特轻转身，肩部和胯部略有自然角度差，一只手自然沿裙侧，另一只手与披片保持空隙，避免挡住整块面料。",
+        "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        true
+      ],
+      "widgets_values_named": {
+        "scene_preset": "Custom",
+        "joiner": "\n\n",
+        "subject": "为设计师提供一件优雅、有新意且能正常穿着的现代连衣裙。26–32岁亚洲成年女性，齐肩黑发、自然淡妆。方向：方领合体上身与轻透A字长裙，通过一片从右肩连接并自然斜落到左侧腰后的宽披肩片形成动势。模型另设计素深咖哑光密织布，做有真实支撑的方领上身、足够宽的肩带和隐藏式独立内裙；胸腹臀胯完整遮蔽。用户参考布用于腰下的大幅A字外裙和肩部披片，外裙长至小腿、内裙到膝附近，主面料占整套主要可见面积，正面留连续宽平顺裙片展示本色与组织。肩片轻轻离开手臂的位置呈现单层透光，裙片随重力弯折，保持实拍中的轻薄和身骨。裁片连接、腰缝与细包边可实际缝制；腰线清楚但没有外露腰带，没有衬衫翻领和长马甲门襟，不堆花边、珠片或装饰网眼。自然转身让肩片和裙摆各形成一条不同方向的柔和弧线。双脚穿深咖色包头包跟低跟皮鞋，封闭鞋后帮完整包住脚跟，不用露跟绑带；两只鞋完整可见。",
+        "scene": "安静的浅灰石材廊道，一段宽墙面提供干净背景。模特轻转身，肩部和胯部略有自然角度差，一只手自然沿裙侧，另一只手与披片保持空隙，避免挡住整块面料。",
+        "photography": "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "size_hint": "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        "include_size_hint": true
+      }
+    },
+    {
+      "id": 10,
+      "type": "FabricScenePreset",
+      "pos": [
+        620,
+        500
+      ],
+      "size": [
+        640,
+        750
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "faithfulness_prompt",
+          "name": "faithfulness_prompt",
+          "shape": 7,
+          "type": "STRING",
+          "link": 137
+        },
+        {
+          "localized_name": "scene_preset",
+          "name": "scene_preset",
+          "type": "COMBO",
+          "widget": {
+            "name": "scene_preset"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "joiner",
+          "name": "joiner",
+          "type": "STRING",
+          "widget": {
+            "name": "joiner"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "subject",
+          "name": "subject",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "subject"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "scene",
+          "name": "scene",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "scene"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "photography",
+          "name": "photography",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "photography"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size_hint",
+          "name": "size_hint",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "size_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "include_size_hint",
+          "name": "include_size_hint",
+          "shape": 7,
+          "type": "BOOLEAN",
+          "widget": {
+            "name": "include_size_hint"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            138
+          ]
+        },
+        {
+          "localized_name": "chars",
+          "name": "chars",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "灵感2 · 立体短罩衫＋中长裙（草图·面料待验收）",
+      "properties": {
+        "Node name for S&R": "FabricScenePreset"
+      },
+      "widgets_values": [
+        "Custom",
+        "\n\n",
+        "为设计师提供一套有明确视觉记忆点、仍可日常穿着的品牌成衣灵感。26–32岁亚洲成年女性，自然齐肩黑发、淡妆。方向：短款立体罩衫与高腰中长裙形成上短下长的比例。参考布用于整个轻透罩衫的宽大前身、后身和肘上弧形宽袖；衣长到高腰，宽平顺前片在左肩一处折入形成偏置领口，袖子利用少量合理裁片形成轻微拱起，保持本布真实身骨，不能凭空变厚变硬。配料由模型自行设计成不透的素米白哑光布，仅用于独立合体内搭、细窄领边和下摆连接，外罩衫仍能显示轻透层次。下装是无花纹深可可色高腰A字中长裙，不用黑色长裤；裙体是明确的另一种面料。设计重点是宽袖、偏置领口与上下比例，不使用长马甲式翻领、交叠长前襟、侧腰搭扣或满身碎褶。主面料在胸前和双袖保留连续可读的大面积。双脚穿深棕低跟乐福鞋，封闭鞋头和完整鞋后帮包住脚跟，鞋底及两只鞋都完整入画。",
+        "浅灰现代建筑的转角与通透走廊，背景克制。模特向镜头斜前方轻转身体，一只前臂自然略抬以显示宽袖弧线，另一只手自然放下；双手不遮挡前片，站姿从容。",
+        "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        true
+      ],
+      "widgets_values_named": {
+        "scene_preset": "Custom",
+        "joiner": "\n\n",
+        "subject": "为设计师提供一套有明确视觉记忆点、仍可日常穿着的品牌成衣灵感。26–32岁亚洲成年女性，自然齐肩黑发、淡妆。方向：短款立体罩衫与高腰中长裙形成上短下长的比例。参考布用于整个轻透罩衫的宽大前身、后身和肘上弧形宽袖；衣长到高腰，宽平顺前片在左肩一处折入形成偏置领口，袖子利用少量合理裁片形成轻微拱起，保持本布真实身骨，不能凭空变厚变硬。配料由模型自行设计成不透的素米白哑光布，仅用于独立合体内搭、细窄领边和下摆连接，外罩衫仍能显示轻透层次。下装是无花纹深可可色高腰A字中长裙，不用黑色长裤；裙体是明确的另一种面料。设计重点是宽袖、偏置领口与上下比例，不使用长马甲式翻领、交叠长前襟、侧腰搭扣或满身碎褶。主面料在胸前和双袖保留连续可读的大面积。双脚穿深棕低跟乐福鞋，封闭鞋头和完整鞋后帮包住脚跟，鞋底及两只鞋都完整入画。",
+        "scene": "浅灰现代建筑的转角与通透走廊，背景克制。模特向镜头斜前方轻转身体，一只前臂自然略抬以显示宽袖弧线，另一只手自然放下；双手不遮挡前片，站姿从容。",
+        "photography": "真实设计师品牌画册摄影。单人头到脚全身，70mm人像视角，摄影机约腰部高度、水平拍摄，正常人体比例。柔和中性日光从左前侧45度照入，弱环境补光保留炭灰内搭细节；面料最前方平顺裁片与皮肤正确曝光，暗部不过黑，浅色不泛黄。自然皮肤纹理、真实缝线和重力，干净而有层次，不用强逆光、金色滤镜、朦胧柔焦或粗颗粒。",
+        "size_hint": "单张竖幅全身照片；头顶到双鞋鞋底全部入画，上下留少量空间。能看清整套结构，不拼版、不添加特写小窗、标注或文字。",
+        "include_size_hint": true
+      }
+    },
+    {
+      "id": 4,
+      "type": "FabricSceneCaption",
+      "pos": [
+        -1140,
+        -350
+      ],
+      "size": [
+        470,
+        435
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "fabric",
+          "name": "fabric",
+          "type": "STRING",
+          "widget": {
+            "name": "fabric"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weave",
+          "name": "weave",
+          "type": "STRING",
+          "widget": {
+            "name": "weave"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "surface",
+          "name": "surface",
+          "type": "STRING",
+          "widget": {
+            "name": "surface"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weight",
+          "name": "weight",
+          "type": "STRING",
+          "widget": {
+            "name": "weight"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_notes",
+          "name": "extra_notes",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_notes"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "caption",
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            153
+          ]
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "参考1 · 完整平面图",
+      "properties": {
+        "Node name for S&R": "FabricSceneCaption"
+      },
+      "widgets_values": [
+        "照片所示同一块轻透的开放组织面料",
+        "严格依这一组实拍的纱束本色及淡色层次；深暗底色须结合透底判断，不套用其他色号",
+        "细纱束沿纵横方向有规律交织，开口内有更细的斜向连接纱；不是随机砂点，也不是均匀塑料方格网",
+        "纱束略有自然粗细变化，细薄、微哑光，无额外闪粉",
+        "透光且可弯折，保留轻微身骨；成分、克重、毫米厚度未测定",
+        "这是完整平面图，是总体色调、组织分布与连续重复关系的首要依据。没有尺子，不虚构每格毫米数。成衣全身视距下纱线自然变细，不能把原图放大倍率照搬成衣。"
+      ],
+      "widgets_values_named": {
+        "fabric": "照片所示同一块轻透的开放组织面料",
+        "color": "严格依这一组实拍的纱束本色及淡色层次；深暗底色须结合透底判断，不套用其他色号",
+        "weave": "细纱束沿纵横方向有规律交织，开口内有更细的斜向连接纱；不是随机砂点，也不是均匀塑料方格网",
+        "surface": "纱束略有自然粗细变化，细薄、微哑光，无额外闪粉",
+        "weight": "透光且可弯折，保留轻微身骨；成分、克重、毫米厚度未测定",
+        "extra_notes": "这是完整平面图，是总体色调、组织分布与连续重复关系的首要依据。没有尺子，不虚构每格毫米数。成衣全身视距下纱线自然变细，不能把原图放大倍率照搬成衣。"
+      }
+    },
+    {
+      "id": 25,
+      "type": "FabricSceneCaption",
+      "pos": [
+        -1140,
+        650
+      ],
+      "size": [
+        470,
+        435
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "fabric",
+          "name": "fabric",
+          "type": "STRING",
+          "widget": {
+            "name": "fabric"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weave",
+          "name": "weave",
+          "type": "STRING",
+          "widget": {
+            "name": "weave"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "surface",
+          "name": "surface",
+          "type": "STRING",
+          "widget": {
+            "name": "surface"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weight",
+          "name": "weight",
+          "type": "STRING",
+          "widget": {
+            "name": "weight"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_notes",
+          "name": "extra_notes",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_notes"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "caption",
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            155
+          ]
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "参考3 · 褶皱与纱束",
+      "properties": {
+        "Node name for S&R": "FabricSceneCaption"
+      },
+      "widgets_values": [
+        "同一面料的立体褶皱实拍",
+        "褶谷的深色属于阴影与透底，不当成染色图案",
+        "近处可见细纱束与开放孔隙，仅用来理解组织构造",
+        "柔和纤维表面，细纱束之间可透光",
+        "褶皱形成有空气感的拱起，既不厚重僵硬，也不画成软亮缎面",
+        "辅助解释弯折和厚薄；不让这张较近的观察尺度主导全身成衣的纹理尺度。"
+      ],
+      "widgets_values_named": {
+        "fabric": "同一面料的立体褶皱实拍",
+        "color": "褶谷的深色属于阴影与透底，不当成染色图案",
+        "weave": "近处可见细纱束与开放孔隙，仅用来理解组织构造",
+        "surface": "柔和纤维表面，细纱束之间可透光",
+        "weight": "褶皱形成有空气感的拱起，既不厚重僵硬，也不画成软亮缎面",
+        "extra_notes": "辅助解释弯折和厚薄；不让这张较近的观察尺度主导全身成衣的纹理尺度。"
+      }
+    },
+    {
+      "id": 27,
+      "type": "PreviewImage",
+      "pos": [
+        -580,
+        100
+      ],
+      "size": [
+        440,
+        680
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图像",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 157
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "四张原始实拍预览 · 按输入顺序",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values_named": {}
+    },
+    {
+      "id": 28,
+      "type": "FabricSceneCaption",
+      "pos": [
+        -1140,
+        1150
+      ],
+      "size": [
+        470,
+        435
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "fabric",
+          "name": "fabric",
+          "type": "STRING",
+          "widget": {
+            "name": "fabric"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "color",
+          "name": "color",
+          "type": "STRING",
+          "widget": {
+            "name": "color"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weave",
+          "name": "weave",
+          "type": "STRING",
+          "widget": {
+            "name": "weave"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "surface",
+          "name": "surface",
+          "type": "STRING",
+          "widget": {
+            "name": "surface"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "weight",
+          "name": "weight",
+          "type": "STRING",
+          "widget": {
+            "name": "weight"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "extra_notes",
+          "name": "extra_notes",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "extra_notes"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "caption",
+          "name": "caption",
+          "type": "STRING",
+          "links": [
+            156
+          ]
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "参考4 · 备用（当前未发送）",
+      "properties": {
+        "Node name for S&R": "FabricSceneCaption"
+      },
+      "widgets_values": [
+        "同一块面料的备用褶皱实拍",
+        "以完整平面图与其他实拍共同判断",
+        "保留相同纱束和孔隙结构",
+        "不增加额外颗粒或光泽",
+        "辅助观察叠层和垂坠",
+        "第四张仅在明确选入四张配方时使用；三张配方不发送本说明。"
+      ],
+      "widgets_values_named": {
+        "fabric": "同一块面料的备用褶皱实拍",
+        "color": "以完整平面图与其他实拍共同判断",
+        "weave": "保留相同纱束和孔隙结构",
+        "surface": "不增加额外颗粒或光泽",
+        "weight": "辅助观察叠层和垂坠",
+        "extra_notes": "第四张仅在明确选入四张配方时使用；三张配方不发送本说明。"
+      }
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1870,
+        -350
+      ],
+      "size": [
+        420,
+        570
+      ],
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "图片",
+          "name": "images",
+          "type": "IMAGE",
+          "link": 136
+        },
+        {
+          "localized_name": "文件名前缀",
+          "name": "filename_prefix",
+          "type": "STRING",
+          "widget": {
+            "name": "filename_prefix"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "images",
+          "name": "images",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "title": "保存1 · 交叠长马甲",
+      "properties": {},
+      "widgets_values": [
+        "fabric_designer_vest"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "fabric_designer_vest",
+        "$$canvas-image-preview": ""
+      }
+    },
+    {
+      "id": 6,
+      "type": "FabricFaithfulness",
+      "pos": [
+        -106.18571428571423,
+        -306.7857142857146
+      ],
+      "size": [
+        460,
+        440
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "captions",
+          "name": "captions",
+          "shape": 7,
+          "type": "STRING",
+          "link": 132
+        },
+        {
+          "localized_name": "preserve",
+          "name": "preserve",
+          "type": "STRING",
+          "widget": {
+            "name": "preserve"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "reference_hint",
+          "name": "reference_hint",
+          "type": "STRING",
+          "widget": {
+            "name": "reference_hint"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "joiner",
+          "name": "joiner",
+          "type": "STRING",
+          "widget": {
+            "name": "joiner"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            133,
+            137,
+            141,
+            145,
+            149
+          ]
+        },
+        {
+          "localized_name": "chars",
+          "name": "chars",
+          "type": "INT",
+          "links": null
+        },
+        {
+          "localized_name": "preview",
+          "name": "preview",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FabricFaithfulness"
+      },
+      "widgets_values": [
+        "材料真实优先于造型夸张。主面料的本色、纱束结构、开放孔隙、透光和弯折须来自照片。组织跟随裁片与透视连续变化，全身视距下自然融合为细织物，不用密集沙点、粗大网格或过度锐化伪造细节。主面料单层保持轻透，遮蔽由独立不透内层完成；不把主面料本身加厚。可以设计未提供实拍的素色配料，但必须与主面料有清楚的结构分工，不能把配料纹理混进主面料。",
+        "所有附图均为同一编号真实面料，不是人物或构图参考。第一张完整平面图优先；其余完整实拍解释大面积透光和弯折。不要复刻拍布背景。生成一张真实产品应用照片，无文字、无拼版、无面料小窗。",
+        "\n\n"
+      ],
+      "widgets_values_named": {
+        "preserve": "材料真实优先于造型夸张。主面料的本色、纱束结构、开放孔隙、透光和弯折须来自照片。组织跟随裁片与透视连续变化，全身视距下自然融合为细织物，不用密集沙点、粗大网格或过度锐化伪造细节。主面料单层保持轻透，遮蔽由独立不透内层完成；不把主面料本身加厚。可以设计未提供实拍的素色配料，但必须与主面料有清楚的结构分工，不能把配料纹理混进主面料。",
+        "reference_hint": "所有附图均为同一编号真实面料，不是人物或构图参考。第一张完整平面图优先；其余完整实拍解释大面积透光和弯折。不要复刻拍布背景。生成一张真实产品应用照片，无文字、无拼版、无面料小窗。",
+        "joiner": "\n\n"
+      }
+    },
+    {
+      "id": 8,
+      "type": "FabricGPTImage2",
+      "pos": [
+        1340,
+        -350
+      ],
+      "size": [
+        470,
+        830
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "localized_name": "ref_images",
+          "name": "ref_images",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "localized_name": "mask",
+          "name": "mask",
+          "shape": 7,
+          "type": "MASK",
+          "link": null
+        },
+        {
+          "localized_name": "original_refs",
+          "name": "original_refs",
+          "shape": 7,
+          "type": "FABRIC_REFS",
+          "link": 135
+        },
+        {
+          "localized_name": "prompt",
+          "name": "prompt",
+          "type": "STRING",
+          "widget": {
+            "name": "prompt"
+          },
+          "link": 134
+        },
+        {
+          "localized_name": "model",
+          "name": "model",
+          "type": "COMBO",
+          "widget": {
+            "name": "model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "quality",
+          "name": "quality",
+          "type": "COMBO",
+          "widget": {
+            "name": "quality"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "size",
+          "name": "size",
+          "type": "COMBO",
+          "widget": {
+            "name": "size"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_width",
+          "name": "custom_width",
+          "type": "INT",
+          "widget": {
+            "name": "custom_width"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_height",
+          "name": "custom_height",
+          "type": "INT",
+          "widget": {
+            "name": "custom_height"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "background",
+          "name": "background",
+          "type": "COMBO",
+          "widget": {
+            "name": "background"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "n",
+          "name": "n",
+          "type": "INT",
+          "widget": {
+            "name": "n"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cost_preview",
+          "name": "cost_preview",
+          "type": "STRING",
+          "widget": {
+            "name": "cost_preview"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "token_estimate",
+          "name": "token_estimate",
+          "type": "STRING",
+          "widget": {
+            "name": "token_estimate"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_tokens",
+          "name": "last_tokens",
+          "type": "STRING",
+          "widget": {
+            "name": "last_tokens"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "last_cost",
+          "name": "last_cost",
+          "type": "STRING",
+          "widget": {
+            "name": "last_cost"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "openai_api_key",
+          "name": "openai_api_key",
+          "type": "STRING",
+          "widget": {
+            "name": "openai_api_key"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "cache_mode",
+          "name": "cache_mode",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "cache_mode"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "variation",
+          "name": "variation",
+          "shape": 7,
+          "type": "INT",
+          "widget": {
+            "name": "variation"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "reference_max_pixels",
+          "name": "reference_max_pixels",
+          "shape": 7,
+          "type": "COMBO",
+          "widget": {
+            "name": "reference_max_pixels"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_base_url",
+          "name": "api_base_url",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_base_url"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "custom_model",
+          "name": "custom_model",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "custom_model"
+          },
+          "link": null
+        },
+        {
+          "localized_name": "api_key_file",
+          "name": "api_key_file",
+          "shape": 7,
+          "type": "STRING",
+          "widget": {
+            "name": "api_key_file"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "localized_name": "image",
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            136
+          ]
+        },
+        {
+          "localized_name": "cost_report",
+          "name": "cost_report",
+          "type": "STRING",
+          "links": null
+        },
+        {
+          "localized_name": "debug_json",
+          "name": "debug_json",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "title": "面料生图 · API Key / 自定义接口",
+      "properties": {
+        "Node name for S&R": "FabricGPTImage2"
+      },
+      "widgets_values": [
+        [
+          "7",
+          0
+        ],
+        "gpt-image-2",
+        "medium",
+        "1024x1536",
+        1024,
+        1024,
+        "auto",
+        1,
+        "",
+        "",
+        "",
+        "",
+        "",
+        "reuse",
+        0,
+        4194304,
+        "https://api.openai.com/v1",
+        "",
+        "",
+        null
+      ],
+      "widgets_values_named": {
+        "prompt": {
+          "0": "7",
+          "1": 0
+        },
+        "model": "gpt-image-2",
+        "quality": "medium",
+        "size": "1024x1536",
+        "custom_width": 1024,
+        "custom_height": 1024,
+        "background": "auto",
+        "n": 1,
+        "cost_preview": "",
+        "token_estimate": "",
+        "last_tokens": "",
+        "last_cost": "",
+        "openai_api_key": "",
+        "cache_mode": "reuse",
+        "variation": 0,
+        "reference_max_pixels": 4194304,
+        "api_base_url": "https://api.openai.com/v1",
+        "custom_model": "",
+        "api_key_file": ""
+      }
+    }
+  ],
+  "links": [
+    [
+      132,
+      3,
+      0,
+      6,
+      0,
+      "STRING"
+    ],
+    [
+      133,
+      6,
+      0,
+      7,
+      0,
+      "STRING"
+    ],
+    [
+      134,
+      7,
+      0,
+      8,
+      3,
+      "STRING"
+    ],
+    [
+      135,
+      3,
+      2,
+      8,
+      2,
+      "FABRIC_REFS"
+    ],
+    [
+      136,
+      8,
+      0,
+      9,
+      0,
+      "IMAGE"
+    ],
+    [
+      137,
+      6,
+      0,
+      10,
+      0,
+      "STRING"
+    ],
+    [
+      138,
+      10,
+      0,
+      11,
+      3,
+      "STRING"
+    ],
+    [
+      139,
+      3,
+      2,
+      11,
+      2,
+      "FABRIC_REFS"
+    ],
+    [
+      140,
+      11,
+      0,
+      12,
+      0,
+      "IMAGE"
+    ],
+    [
+      141,
+      6,
+      0,
+      13,
+      0,
+      "STRING"
+    ],
+    [
+      142,
+      13,
+      0,
+      14,
+      3,
+      "STRING"
+    ],
+    [
+      143,
+      3,
+      2,
+      14,
+      2,
+      "FABRIC_REFS"
+    ],
+    [
+      144,
+      14,
+      0,
+      15,
+      0,
+      "IMAGE"
+    ],
+    [
+      145,
+      6,
+      0,
+      16,
+      0,
+      "STRING"
+    ],
+    [
+      146,
+      16,
+      0,
+      17,
+      3,
+      "STRING"
+    ],
+    [
+      147,
+      3,
+      2,
+      17,
+      2,
+      "FABRIC_REFS"
+    ],
+    [
+      148,
+      17,
+      0,
+      18,
+      0,
+      "IMAGE"
+    ],
+    [
+      149,
+      6,
+      0,
+      19,
+      0,
+      "STRING"
+    ],
+    [
+      150,
+      19,
+      0,
+      20,
+      3,
+      "STRING"
+    ],
+    [
+      151,
+      3,
+      2,
+      20,
+      2,
+      "FABRIC_REFS"
+    ],
+    [
+      152,
+      20,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      153,
+      4,
+      0,
+      3,
+      0,
+      "STRING"
+    ],
+    [
+      154,
+      5,
+      0,
+      3,
+      1,
+      "STRING"
+    ],
+    [
+      155,
+      25,
+      0,
+      3,
+      2,
+      "STRING"
+    ],
+    [
+      156,
+      28,
+      0,
+      3,
+      3,
+      "STRING"
+    ],
+    [
+      157,
+      3,
+      1,
+      27,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.9,
+      "offset": [
+        -1368.888888888889,
+        -1155.5555555555557
+      ]
+    },
+    "frontendVersion": "1.49.6",
+    "fabric_material_reuse": 1,
+    "fabric_folder_input": 1,
+    "fabric_api_relay": 1,
+    "fabric_input_recipe": "flat; {stem}-3.JPG; {stem}-2.JPG; whole frames",
+    "fabric_recipe_review": "设计灵感候选；非实物色彩或组织验收"
+  },
+  "version": 0.4
+}

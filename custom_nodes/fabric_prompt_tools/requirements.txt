@@ -1,0 +1,4 @@
+Pillow>=10
+numpy
+requests>=2.31
+filelock>=3.13

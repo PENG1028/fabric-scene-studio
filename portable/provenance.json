@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "source_date": "2026-09-09",
+  "source_sha256": {
+    "fabric_gpt.py": "35adcfe35b34f1dc4fad8ab07244bad88a9f79e2e314ced55a876aa030713615",
+    "nodes.py": "3c04cf13264a62902a25a6ff472b3d035397af61f7ef48a0bfaa7fead248c0d7"
+  },
+  "note": "Pure helpers copied at build time. Existing installed ComfyUI nodes remain unchanged. Rebuild and verify after changing the source helpers."
+}
