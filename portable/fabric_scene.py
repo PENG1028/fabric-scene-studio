@@ -13,6 +13,7 @@ from filelock import FileLock
 from PIL import Image, ImageOps
 import api_core as core
 from prompt_core import FabricMaterialFolder, FabricSceneCaption, FabricFaithfulness, FabricScenePreset
+from transparency import render_controls
 
 HERE = Path(__file__).resolve().parent
 
@@ -81,6 +82,11 @@ def compile_recipe(recipe_file):
         role = '完整平面图：大面积颜色、纹理分布和重复比例的首要依据' if i == 1 else '补充实拍：结合完整平面图判断，不单独放大组织'
         texts.append(f'[参考图 {i}] {source.name} | {role}。' + caption)
         source_info.append(dict(file=str(source), role='flat' if i == 1 else 'material', source_sha256=hashlib.sha256(source.read_bytes()).hexdigest()))
+    controls_text, control_image, control_info = '', None, None
+    if recipe.get('material_controls'):
+        controls_text, control_image, control_info = render_controls(recipe['material_controls'], path.parent)
+        if control_image is not None and '所有附图均为同一编号真实面料' in recipe['rules'].get('reference_hint', ''):
+            raise ValueError('Transparency image conflicts with all-images-are-material rule')
     style = recipe.get('style')
     if style:
         if '所有附图均为同一编号真实面料' in recipe['rules'].get('reference_hint', ''):
@@ -92,10 +98,24 @@ def compile_recipe(recipe_file):
         texts.append(f'[参考图 {len(paths)}] {style_path.name} | ' + style['caption'])
         source_info.append(dict(file=str(style_path), role='style', source_sha256=hashlib.sha256(style_path.read_bytes()).hexdigest()))
     a = FabricFaithfulness().assemble(**recipe['rules'], captions='\n\n'.join(texts))[0]
+    if controls_text:
+        a += '\n\n' + controls_text
+    if control_image is not None:
+        a += f'\n\n[参考图 {len(paths)+1}] ' + control_info['caption']
     prompt = FabricScenePreset().assemble(**recipe['scene'], faithfulness_prompt=a)[0].strip()
     if not prompt:
         raise ValueError('Empty prompt')
-    payloads, sizes = zip(*(png_payload(p, max_pixels) for p in paths))
+    payloads, sizes = map(list, zip(*(png_payload(p, max_pixels) for p in paths)))
+    if control_image is not None:
+        buffer = io.BytesIO()
+        control_image.save(buffer, format='PNG')
+        raw = buffer.getvalue()
+        if len(raw) >= 50*1024*1024:
+            raise ValueError('Transparency crop exceeds 50 MB')
+        payloads.append(raw)
+        sizes.append(list(control_image.size))
+        control_info['source_sha256'] = hashlib.sha256(Path(control_info['file']).read_bytes()).hexdigest()
+        source_info.append(control_info)
     request = dict(model=actual_model, prompt=prompt, quality=quality, background=background, n=1,
                    size=core.validate_size(model, g.get('size', '1024x1536'), g.get('custom_width', 1024), g.get('custom_height', 1536)), output_format='png')
     manifest = dict(schema=1, request=request, variation=variation, reference_max_pixels=max_pixels,
